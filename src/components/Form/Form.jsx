@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {Form,Label,Button,Input,Section} from "./Form.styled"
 import { nanoid } from 'nanoid';
+import PropTypes from "prop-types"
 
 
 const INITIAL_STATE = {
