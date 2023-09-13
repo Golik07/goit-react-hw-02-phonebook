@@ -1,16 +1,8 @@
 import { Form,Section,Label,Input } from "./Filter.styled";
-import React,{Component}from "react";
+import PropTypes from "prop-types"
 
 
 const FilterContact = ({value,onChange}) =>  {
-
- 
-
-    // handleChange = ({target:{value}}) => {
-    //     console.log(value)
-    // }
-
-
         return(
             <Section>
                 <Form>
@@ -26,6 +18,12 @@ const FilterContact = ({value,onChange}) =>  {
             </Section>
         )
     
+}
+
+
+FilterContact.propTypes = {
+    value: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired
 }
 
 

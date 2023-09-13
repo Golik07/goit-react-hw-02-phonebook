@@ -1,5 +1,10 @@
 
 import Item from "./Item/Item"
+import PropTypes from "prop-types"
+
+
+
+
 
 const List = ({contacts,handleDelete}) => {
     return (
@@ -15,6 +20,18 @@ const List = ({contacts,handleDelete}) => {
             ))}
         </ul>
     )
+}
+
+
+List.propTypes = {
+    contacts: PropTypes.arrayOf(
+        PropTypes.shape({
+            id:PropTypes.string.isRequired,
+            number:PropTypes.string.isRequired,
+            name:PropTypes.string.isRequired,
+        })
+    ).isRequired,
+    handleDelete: PropTypes.func.isRequired,
 }
 
 export default List

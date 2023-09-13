@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Form,Label,Button,Input,Section} from "./Form.styled"
 import { nanoid } from 'nanoid';
-import PropTypes, { number } from 'prop-types';
+import PropTypes from "prop-types"
 
 
 const INITIAL_STATE = {
@@ -11,7 +11,7 @@ const INITIAL_STATE = {
 
 class ContactForm extends Component {
 
-    state = INITIAL_STATE
+    state = INITIAL_STATE;
 
     idName= nanoid();
     idNumber = nanoid();
@@ -62,5 +62,8 @@ class ContactForm extends Component {
         )
     }
 }
+
+
+
 
 export default ContactForm;
