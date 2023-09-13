@@ -50,7 +50,7 @@ export class App extends Component {
   
   render(){
     const visibleContacts = this.getVisibleContacts();
-    const {contacts,filter} = this.state;
+    const {filter} = this.state;
 
     return(
       <div>
