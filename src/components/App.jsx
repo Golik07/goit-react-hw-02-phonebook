@@ -1,6 +1,6 @@
 import React,{Component} from "react";
-import ContactForm from "./Form"
 import { nanoid } from 'nanoid';
+import ContactForm from "./Form"
 import List from "./List/List";
 import FilterContact from "./Filter/Filter";
 
@@ -38,8 +38,6 @@ export class App extends Component {
   changeFilter = e => {
     this.setState({filter: e.currentTarget.value});
   }
-
-  
 
   getVisibleContacts = () => {
     const {contacts,filter} = this.state;

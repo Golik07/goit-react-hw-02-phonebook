@@ -30,7 +30,7 @@ List.propTypes = {
             number:PropTypes.string.isRequired,
             name:PropTypes.string.isRequired,
         })
-    ).isRequired,
+    ),
     handleDelete: PropTypes.func.isRequired,
 }
 

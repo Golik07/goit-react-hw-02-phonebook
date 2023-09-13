@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import {Form,Label,Button,Input,Section} from "./Form.styled"
 import { nanoid } from 'nanoid';
-import PropTypes from "prop-types"
 
 
 const INITIAL_STATE = {
@@ -10,6 +9,9 @@ const INITIAL_STATE = {
     };
 
 class ContactForm extends Component {
+    static propTypes = {
+        onAddContact: PropTypes.func.isRequired,
+      };
 
     state = INITIAL_STATE;
 
